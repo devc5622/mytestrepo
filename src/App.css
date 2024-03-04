@@ -1,38 +1,79 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(135deg, #ff69b4, #8a2be2, #4b0082);
+}
+
+.headercard {
+  padding-bottom: 0.25%;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 100px;
+}
+
+.sidecard {
+  padding: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 100%;
+  margin-top: -100px; /* Move the side card up by 100px */
+}
+
+.body {
+  flex: 1;
+  margin-left: 255px;
+  margin-top: 5px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bgcircle {
+  background: #ff7a59;
+  width: 100px;
+  height: 100px;
+  margin-left: 25%;
+  margin-top: 10%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidecard h2 {
+  margin-left: -10%;
+  margin-top: 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidecard img {
+  padding-left: 10%;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidecard button {
+  display: block;
+  margin: 1px auto;
+  padding: 10px 20px;
+  background-color: #4b0082;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidecard button:hover {
+  background-color: #8a2be2;
 }
